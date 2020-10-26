@@ -1,0 +1,310 @@
+*{
+  margin: 0;
+  padding: 0
+}
+
+/* HOME PAGE */
+html{
+    /*background-image: url(head.jpg);*/
+    /*height: auto;*/
+    background-color: rgba(160, 70, 70, 0.959);
+    background-size: 100%;
+    /*background-position: center;*/
+    background-attachment: fixed;
+    
+}
+
+.main_nav{
+  float: right;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.main_nav li{
+  display: inline-block;
+}
+
+.main_nav li a{
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+}
+
+.main_nav li.active a{
+  border: 1px solid white;
+}
+
+.main_nav li a:hover{
+  border: 1px solid white
+}
+
+#h{
+    
+    margin-top: 10px;
+    float: left;
+    padding-left: 5px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 75px;
+    width: 100%
+
+
+}
+.nav{
+    font-size: 50px;
+    letter-spacing: 0.3405em;
+    text-align: center;
+    margin: 100px auto
+
+}
+.flex-container{
+  /*margin: 10px;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: wrap;
+  width: 80vw;
+  margin: 2em auto;
+  font-family:'Calibri', 'Trebuchet MS', sans-serif;   
+}
+.card{
+  position: relative;
+  flex: 0 0 30%;
+  /* max-width: 33%; */
+  background: rgba(129, 160, 132, 0.856);
+  border: none;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card img {
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+}
+
+.card-head{
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #3fa731, #439e31);
+  color: #fff;
+}
+.card-body{
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  max-width: fit-content;
+  padding-bottom: 60px;
+}
+.card-body .btn{
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #3fa731, #439e31      );
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+  position: absolute;
+  bottom: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+}
+.card-body .btn:hover{
+  background-image: linear-gradient(to right, #006417, #00b128);
+  text-decoration: none;
+  color: #fff
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0,0,0,0.25);
+}
+.card-img-top{
+  background-size: cover;
+}
+.modal {
+  position: fixed;
+  /* hide it */
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.modal:target {
+  /* show it */
+  visibility: visible;
+  opacity: 1;
+}
+.content {
+  text-align: center;
+  margin: 70px auto;
+  padding: 20px;
+  background: rgb(121, 199, 98);
+  color: #000000;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  position: relative;
+  margin: 0 auto;
+  top: 35%;
+}
+.pop-head{
+  font-size: 42px;
+  line-height: 2;
+  letter-spacing: 0.022em;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.closebtn:hover {
+  color: white;
+}
+
+/*Responsive media quesries*/
+@media (max-width: 1000px) {
+  .card {
+    width: 40%;
+    flex:100%
+  }
+}
+
+@media (max-width: 620px) {
+
+  .container{
+    width: 100%;
+  }
+  #h{
+    padding: 20px;
+    font-size: 20px;
+  }
+  .card{
+    widows: 80%;
+  }
+}
+/* ABOUT PAGE */
+.a-container{
+  margin: 5px;
+padding: 5px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.contents{
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.h1{
+  text-align: center;
+  justify-content: center;
+  padding-top: 65px;
+  font-size: 72px;
+  letter-spacing: 0.3405em
+}
+p{
+  font-size: 20px;
+  text-align: center;
+}
+.plur{
+  width: 760px;
+  height: 450px; 
+  margin-top: 5%;
+}
+
+/* CONTACT PAGE*/
+.c-container{
+  color:white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.contact{
+  text-align: center;
+  justify-content: center;
+  padding-top: 65px;
+}
+.contact-header{
+  text-align: center;
+  font-size: 72px;
+  letter-spacing: 0.3405em
+}
+.details{
+  font-size: 20px;
+}
+.form-name{
+  border: 2px solid #8f8a8a;
+  color: #8f8a8a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 0 37px;
+  padding: 20px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 596px;
+}
+.form-email{
+  border: 2px solid #8f8a8a;
+  color: #8f8a8a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 0 37px;
+  padding: 20px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 596px;
+}
+.message{
+  border: 2px solid #8f8a8a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100px;
+  width:400px;
+  overflow: auto;
+  resize: none;
+  text-align: center;
+}
+.form-button{
+  background: #8f8a8a;
+    color: #fff;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    display: inline-block;
+    padding: 28px;
+    width: auto;
+    
+}
+.form-button:hover{
+  background: #3fa731;
+  color: #000000;
+  cursor: pointer;
+}
+
