@@ -321,6 +321,18 @@ p{
   font-size: 72px;
   letter-spacing: 0.3405em
 }
-.head-faq{
+
+.images{
+  display: grid;
+  justify-content: center;
+  margin-top: 100px;
+
+}
+.faq_imgs{
+  justify-content: space-between;
+  width: 800px;
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
